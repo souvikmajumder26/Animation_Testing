@@ -291,30 +291,60 @@ a
     display: flex;
     justify-content: center;
 }
-.name-animate
-{
-    position: absolute;
-    top: 45%;
-    font-size: 45px;
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 0.8px #000000;
-    text-transform: uppercase;
-    letter-spacing: 1.5vw;
+@media screen and (min-width: 768px) {
+  .name-animate
+  {
+      position: absolute;
+      top: 45%;
+      font-size: 50px;
+      color: rgba(0, 0, 0, 0);
+      -webkit-text-stroke: 0.8px #000000;
+      text-transform: uppercase;
+      letter-spacing: 1.5vw;
+  }
+  .name-animate::before
+  {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: #000000;
+      -webkit-text-stroke: 0px #000000;
+      border-right: 3px solid #000000;
+      overflow: hidden;
+      animation: text-animate 6s linear infinite; 
+  }
 }
-.name-animate::before
-{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #000000;
-    -webkit-text-stroke: 0px #000000;
-    border-right: 3px solid #000000;
-    overflow: hidden;
-    animation: text-animate 6s linear infinite; 
+
+@media screen and (max-width: 769px) {
+  .name-animate
+  {
+      position: absolute;
+      top: 45%;
+      font-size: 40px;
+      color: rgba(0, 0, 0, 0);
+      -webkit-text-stroke: 0.8px #000000;
+      text-transform: uppercase;
+      letter-spacing: 1.5vw;
+  }
+  .name-animate::before
+  {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: #000000;
+      -webkit-text-stroke: 0px #000000;
+      border-right: 3px solid #000000;
+      overflow: hidden;
+      animation: text-animate 6s linear infinite; 
+  }
 }
+
 @keyframes text-animate
 {
     0%, 10%, 100% { width: 0;}
@@ -332,7 +362,7 @@ a
     padding-left: 3%;
 }
 */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
     .contact-bottom-left
     {
         font-family: 'Raleway-500';
@@ -359,7 +389,7 @@ a
         padding-left: 19px;
     }
 }
-@media screen and (max-width: 751px) {
+@media screen and (max-width: 769px) {
     .contact-bottom-left
     {
         font-family: 'Raleway-500';
@@ -385,4 +415,18 @@ a
         bottom : 13px;
         padding-left: 15px;
     }
+}
+@media screen and (max-height: 421px) {
+  .contact-bottom-left
+  {
+    display: none;
+  }
+  .address-bottom-left
+  {
+    display: none;
+  }
+  .copyright-bottom-left
+  {
+    display: none;
+  }
 }
