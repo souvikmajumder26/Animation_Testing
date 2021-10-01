@@ -276,21 +276,25 @@
 }
 body
 {
-    background-image: url('images/1.jpg');
+    background-image: url('../images/1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
+}
+a
+{
+    color: black;
 }
 .section-name
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 .name-animate
 {
-    position: relative;
+    position: absolute;
+    top: 45%;
     font-size: 45px;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 0.8px #000000;
@@ -317,9 +321,68 @@ body
     70%, 90% { width: 100%;}
 }
 
+/*
 .section-bottom-left
 {
     font-family: 'Raleway-400';
-    font-size: 25px;
-    letter-spacing: 0.5vw;
+    font-size: 23px;
+    letter-spacing: 0.7vw;
+    position: absolute;
+    top:90%;
+    padding-left: 3%;
+}
+*/
+@media screen and (min-width: 750px) {
+    .contact-bottom-left
+    {
+        font-family: 'Raleway-500';
+        font-size: 24px;
+        letter-spacing: 0.4vw;
+        position: absolute;
+        bottom: 100px;
+        padding-left: 19px;
+    }
+    .address-bottom-left
+    {
+        font-family: 'Raleway-400-italic';
+        font-size: 18px;
+        position: absolute;
+        bottom: 55px;
+        padding-left: 19px;
+    }
+    .copyright-bottom-left
+    {
+        font-family: 'Raleway-400';
+        font-size: 15px;
+        position: absolute;
+        bottom : 15px;
+        padding-left: 19px;
+    }
+}
+@media screen and (max-width: 751px) {
+    .contact-bottom-left
+    {
+        font-family: 'Raleway-500';
+        font-size: 22px;
+        letter-spacing: 0.8vw;
+        position: absolute;
+        bottom: 105px;
+        padding-left: 15px;
+    }
+    .address-bottom-left
+    {
+        font-family: 'Raleway-400-italic';
+        font-size: 16px;
+        position: absolute;
+        bottom : 45px;
+        padding-left: 15px;
+    }
+    .copyright-bottom-left
+    {
+        font-family: 'Raleway-400';
+        font-size: 13px;
+        position: absolute;
+        bottom : 13px;
+        padding-left: 15px;
+    }
 }
