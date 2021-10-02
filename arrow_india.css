@@ -492,13 +492,38 @@ a
     left: 3%;
   }
 }
+@media screen and (max-width: 500px)
+{
+  .button-products{
+    height: 45px;
+    width: 125px;
+    top: 1%;
+    right: 5%;
+  }
+  .button-contact{
+    height: 45px;
+    width: 115px;
+    top: 10%;
+    right: 5%;
+  }
+  .button-products:after{
+    font-size: 16px;
+    top: 2%;
+    left: 3%;
+  }
+  .button-contact:after{
+    font-size: 16px;
+    top: 2%;
+    left: 3%;
+  }
+}
 .button-products{
   position: absolute;
   overflow: hidden;
   background-color: #00000000;
 }
 .button-products-animation{
-  height: 3px;
+  height: 0.15em;
   width: 145px;
   position: absolute;
   top: 82%;
@@ -534,7 +559,7 @@ a
   background-color: #00000000;
 }
 .button-contact-animation{
-  height: 3px;
+  height: 0.15em;
   width: 140px;
   position: absolute;
   top: 82%;
