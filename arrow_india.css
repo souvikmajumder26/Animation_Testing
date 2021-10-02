@@ -274,9 +274,18 @@
     box-sizing: border-box;
     font-family: 'Raleway-600';
 }
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("images/1.jpg");
+  }
+}
+@media screen and (max-width: 769px) {
+  body {
+    background-image: url("images/heart-jute.jpg")
+  }
+}
 body
 {
-    background-image: url('images/1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
