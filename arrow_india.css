@@ -272,11 +272,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway-500';
+    font-family: 'Raleway-600';
 }
 body
 {
-    background-image: url('images/1.jpg');
+    background-image: url('../images/1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -429,4 +429,133 @@ a
   {
     display: none;
   }
+}
+
+
+/* products and contact animations */
+@media screen and (min-width: 768px)
+{
+  .button-products{
+    height: 70px;
+    width: 180px;
+    top: 1%;
+    right: 25%;
+  }
+  .button-contact{
+    height: 70px;
+    width: 170px;
+    top: 1%;
+    right: 5%;
+  }
+  .button-products:after{
+    font-size: 18px;
+    top: 8%;
+    right: 12.6%;
+  }
+  .button-contact:after{
+    font-size: 18px;
+    top: 8%;
+    right: 12.6%;
+  }
+}
+@media screen and (max-width: 769px)
+{
+  .button-products{
+    height: 45px;
+    width: 125px;
+    top: 1%;
+    right: 35%;
+  }
+  .button-contact{
+    height: 45px;
+    width: 115px;
+    top: 1%;
+    right: 5%;
+  }
+  .button-products:after{
+    font-size: 16px;
+    top: 2%;
+    left: 3%;
+  }
+  .button-contact:after{
+    font-size: 16px;
+    top: 2%;
+    left: 3%;
+  }
+}
+.button-products{
+  position: absolute;
+  overflow: hidden;
+  background-color: #00000000;
+}
+.button-products-animation{
+  height: 3px;
+  width: 145px;
+  position: absolute;
+  top: 82%;
+  left: 0%;
+  overflow: hidden;
+  background-color: #00000000;
+}
+.button-products-animation:before{
+  content: "";
+  background-color: black;
+  height: 300%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  top: -100%;
+  animation: underline-1 2s linear infinite;
+}
+.button-products:after{
+  content: "P R O D U C T S";
+  font-family: 'Poppins';
+  height: 86%;
+  width: 94%;
+  position: absolute;
+  background-color: #00000000;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  display: grid;
+  place-items: center;
+}
+.button-contact{
+  position: absolute;
+  overflow: hidden;
+  background-color: #00000000;
+}
+.button-contact-animation{
+  height: 3px;
+  width: 140px;
+  position: absolute;
+  top: 82%;
+  left: 0%;
+  overflow: hidden;
+  background-color: #00000000;
+}
+.button-contact-animation:before{
+  content: "";
+  background-color: black;
+  height: 300%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  top: -100%;
+  animation: underline-1 2s linear infinite;
+}
+.button-contact:after{
+  content: "C O N T A C T";
+  font-family: 'Poppins';
+  height: 86%;
+  width: 94%;
+  position: absolute;
+  background-color: #00000000;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  display: grid;
+  place-items: center;
+}
+@keyframes underline-1{
+  0% {left: -400%;}
+  100% {left: 100%;}
 }
