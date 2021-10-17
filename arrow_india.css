@@ -276,12 +276,12 @@
 }
 @media screen and (min-width: 768px) {
   body {
-    background-image: url("images/1.jpg");
+    background-image: url("images/1_compressed.jpg");
   }
 }
 @media screen and (max-width: 769px) {
   body {
-    background-image: url("images/heart-jute.jpg")
+    background-image: url("images/heart-jute_compressed.jpg")
   }
 }
 body
