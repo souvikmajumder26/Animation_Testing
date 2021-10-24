@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway-600';
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/1_compressed.jpg");
+    min-height: 100vh;
+}
+
+a {
+    color: black;
+}
+
+/* ARROW INDIA : name placement */
+.section-name {
+    display: flex;
+    justify-content: center;
+}
+/* ARROW INDIA : name animation */
+.name-animate {
+    position: absolute;
+    top: 45%;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.8px #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5vw;
+}
+.name-animate::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #000000;
+    -webkit-text-stroke: 0px #000000;
+    border-right: 3px solid #000000;
+    overflow: hidden;
+    animation: text-animate 6s linear infinite; 
+}
+@keyframes text-animate {
+    0%, 10%, 100% { width: 0;}
+    70%, 90% { width: 100%;}
+}
+
+/* Page - Left Down Corner items */
+.contact-bottom-left {
+    font-family: 'Raleway-500';
+    font-size: 24px;
+    letter-spacing: 0.4vw;
+    position: absolute;
+    bottom: 100px;
+    padding-left: 19px;
+}
+.address-bottom-left {
+    font-family: 'Raleway-400-italic';
+    font-size: 18px;
+    position: absolute;
+    bottom: 55px;
+    padding-left: 19px;
+}
+.copyright-bottom-left {
+    font-family: 'Raleway-400';
+    font-size: 15px;
+    position: absolute;
+    bottom : 15px;
+    padding-left: 19px;
+}
+
+/* Page - Right Upper Corner items */
+.button-products {
+    position: absolute;
+    overflow: hidden;
+    background-color: #00000000;
+    height: 70px;
+    width: 180px;
+    top: 1%;
+    right: 25%;
+    transition: transform .4s ease;
+}
+.button-products:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+.button-products-animation {
+    height: 0.15em;
+    width: 145px;
+    position: absolute;
+    top: 82%;
+    left: 0%;
+    overflow: hidden;
+    background-color: #00000000;
+}
+.button-products-animation:before {
+    content: "";
+    background-color: black;
+    height: 300%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    animation: underline-1 2s linear infinite;
+}
+.button-products:after {
+    content: "P R O D U C T S";
+    font-family: 'Poppins';
+    height: 86%;
+    width: 94%;
+    position: absolute;
+    background-color: #00000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    top: 8%;
+    right: 12.6%;
+}
+
+.button-contact {
+    position: absolute;
+    overflow: hidden;
+    background-color: #00000000;
+    height: 70px;
+    width: 170px;
+    top: 1%;
+    right: 5%;
+    transition: transform .4s ease;
+}
+.button-contact:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+.button-contact-animation {
+    height: 0.15em;
+    width: 140px;
+    position: absolute;
+    top: 82%;
+    left: 0%;
+    overflow: hidden;
+    background-color: #00000000;
+}
+.button-contact-animation:before {
+    content: "";
+    background-color: black;
+    height: 300%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    animation: underline-1 2s linear infinite;
+}
+.button-contact:after {
+    content: "C O N T A C T";
+    font-family: 'Poppins';
+    height: 86%;
+    width: 94%;
+    position: absolute;
+    background-color: #00000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    top: 8%;
+    right: 12.6%;
+}
+@keyframes underline-1 {
+    0% {left: -400%;}
+    100% {left: 100%;}
+}
+
+/*********** Tablet screen view ***********/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-image: url("images/heart-jute_compressed.jpg")
+    }
+
+    /* ARROW INDIA : name animation */
+    .name-animate {
+        font-size: 40px;
+    }
+
+    /* Page - Left Down Corner items */
+    .contact-bottom-left {
+        font-family: 'Raleway-500';
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.8vw;
+        position: absolute;
+        bottom: 105px;
+        padding-left: 15px;
+    }
+    .address-bottom-left {
+        font-family: 'Raleway-400-italic';
+        font-size: 16px;
+        position: absolute;
+        bottom: 45px;
+        padding-left: 15px;
+    }
+    .copyright-bottom-left {
+        font-family: 'Raleway-400';
+        font-size: 13px;
+        position: absolute;
+        bottom : 13px;
+        padding-left: 15px;
+    }
+
+    /* Page - Right Upper Corner items */
+    .button-products {
+        height: 45px;
+        width: 125px;
+        top: 3%;
+        right: 27%;
+    }
+    .button-contact {
+        height: 45px;
+        width: 115px;
+        top: 3%;
+        right: 5%;
+    }
+    .button-products:after {
+        font-size: 16px;
+        top: 2%;
+        left: 3%;
+    }
+    .button-contact:after {
+        font-size: 16px;
+        top: 2%;
+        left: 3%;
+    }
+}
+
+/*********** Mobile screen view ***********/
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("images/heart-jute_compressed.jpg")
+    }
+
+    /* ARROW INDIA : name animation */
+    .name-animate {
+        font-size: 40px;
+    }
+
+    /* Page - Left Down Corner items */
+    .contact-bottom-left {
+        font-family: 'Raleway-500';
+        font-size: 22px;
+        letter-spacing: 0.8vw;
+        position: absolute;
+        bottom: 105px;
+        padding-left: 15px;
+    }
+    .address-bottom-left {
+        font-family: 'Raleway-400-italic';
+        font-size: 16px;
+        position: absolute;
+        bottom: 45px;
+        padding-left: 15px;
+    }
+    .copyright-bottom-left {
+        font-family: 'Raleway-400';
+        font-size: 13px;
+        position: absolute;
+        bottom : 13px;
+        padding-left: 15px;
+    }
+
+    /* Page - Right Upper Corner items */
+    .button-products {
+        height: 45px;
+        width: 125px;
+        top: 1%;
+        right: 5%;
+    }
+    .button-contact {
+        height: 45px;
+        width: 115px;
+        top: 10%;
+        right: 5%;
+    }
+    .button-products:after {
+        font-size: 16px;
+        top: 2%;
+        left: 3%;
+    }
+    .button-contact:after {
+        font-size: 16px;
+        top: 2%;
+        left: 3%;
+    }
+}
