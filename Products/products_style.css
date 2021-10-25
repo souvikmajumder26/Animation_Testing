@@ -1,9 +1,61 @@
 * {
-    background-color: rgb(224, 224, 224);
+    font-family: "Raleway-600", sans-serif;
 }
 
 body {
     margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/2_blurred.jpg");
+    min-height: 100vh;
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    color:black;
+    margin-left: 10px;
+}
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .img-container {
@@ -13,14 +65,14 @@ body {
 }
 
 .img-border {
-    border: 4px solid rgba(0, 0, 0, 0.4);
+    border: 4px solid #1c44217a;
     border-radius: 8px;
 }
 
 /* Vertical pan Container */
 .img-hover-pan-v {
     overflow: hidden;                                 /* Hide the overflowing of child elements */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   /* light shadow */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;   /* light shadow */
 }
 .img-hover-pan-v img {
     transition: transform .4s ease;
@@ -28,7 +80,7 @@ body {
 }
 /* The Transformation */
 .img-hover-pan-v:hover {
-    box-shadow: rgba(0, 0, 0, 0.747) 0px 5px 15px;  /* darker shadow */
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;  /* darker shadow */
 }
 .img-hover-pan-v:hover img {
     transform: scale(1.4) translateY(13%);
