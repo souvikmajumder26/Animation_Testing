@@ -20,6 +20,7 @@ i {
     background-color: white;
     border: 18px solid white;
     border-radius: 100px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .navbar-nav {
@@ -59,20 +60,34 @@ i {
 
 .contact-address-text, .contact-phone-text, .contact-email-text {
     margin-left: 20%;
+    text-shadow: 2px 2px 10px black;
 }
 
 .icon-address {
     margin-top: 20px;
 }
 
+#map {
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 400px;
+    width: 96%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
 @media screen and (min-width:768px) {
     i {
-        margin-left: 25%;
+        margin-left: 40%;
     }
     .contact-h2 {
         font-size: 34px;
     }
     .contact-address-text, .contact-phone-text, .contact-email-text {
-        margin-left: 45%;
+        margin-left: 60%;
+    }
+    #map {
+        margin-top: 0px;
     }
 }
