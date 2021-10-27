@@ -26,6 +26,9 @@ i {
 .navbar-nav {
     background-color: rgba(88, 27, 8, 0.692);
 }
+.navbar-nav:hover {
+    background-color: rgba(121, 65, 48, 0.61);
+}
 
 .contact-container {
     margin-top: 30px;
@@ -61,6 +64,14 @@ i {
 .contact-address-text, .contact-phone-text, .contact-email-text {
     margin-left: 25%;
     text-shadow: 2px 2px 10px black;
+}
+
+.contact-links {
+    color: white;
+    text-decoration: none;
+}
+.contact-links:hover {
+    color: rgb(202, 177, 177);
 }
 
 .icon-address {
