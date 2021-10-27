@@ -1,0 +1,16 @@
+* {
+    font-family: 'Raleway-600', sans-serif;
+}
+
+body {
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../images/3.jpg");
+    min-height: 100vh;
+}
+
+.navbar-nav {
+    background-color: rgba(88, 27, 8, 0.692);
+}
