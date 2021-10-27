@@ -28,6 +28,7 @@ i {
 
 .contact-container {
     margin-top: 30px;
+    overflow: hidden;
 }
 
 .contact-h2 {
@@ -61,7 +62,7 @@ i {
 }
 
 .icon-address {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 @media screen and (min-width:768px) {
@@ -73,8 +74,5 @@ i {
     }
     .contact-address-text, .contact-phone-text, .contact-email-text {
         margin-left: 45%;
-    }
-    .icon-address {
-        margin-top: 20px;
     }
 }
