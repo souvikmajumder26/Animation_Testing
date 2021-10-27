@@ -14,7 +14,7 @@ body {
 
 i {
     float: left;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 18px;
     color: black;
     background-color: white;
@@ -59,7 +59,7 @@ i {
 }
 
 .contact-address-text, .contact-phone-text, .contact-email-text {
-    margin-left: 30%;
+    margin-left: 25%;
     text-shadow: 2px 2px 10px black;
 }
 
