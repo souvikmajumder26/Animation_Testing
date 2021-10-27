@@ -67,6 +67,29 @@ i {
     margin-top: 20px;
 }
 
+.contact-whatsapp {
+    margin-bottom: 30px;
+}
+.contact-whatsapp-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #34434b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 10px solid #34434b;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+.contact-whatsapp-button:hover {
+    background-color: #425661;
+    border: 10px solid #425661;
+}
+.contact-whatsapp-image {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
 
 #map {
     margin-left: 5px;
