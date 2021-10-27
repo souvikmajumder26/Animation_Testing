@@ -1,5 +1,6 @@
 * {
     font-family: 'Raleway-600', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -41,7 +42,6 @@ i {
 .contact-div {
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 .contact-span {
