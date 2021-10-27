@@ -93,3 +93,8 @@ i {
         margin-top: 0px;
     }
 }
+@media screen and (min-width: 768px) {
+    #map {
+        margin-top: 0px;
+    }
+}
