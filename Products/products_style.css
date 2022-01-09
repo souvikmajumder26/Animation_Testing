@@ -102,13 +102,13 @@ p {
 }
 .img-hover-pan-v img {
     transition: transform .4s ease;
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 /* The Transformation */
 .img-hover-pan-v:hover {
     box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;  /* darker shadow */
 }
 .img-hover-pan-v:hover img {
-    transform: scale(1.4) translateY(13%);
+    transform: scale(1.1) translateY(4%);
     cursor: pointer;
 }
