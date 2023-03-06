@@ -8,7 +8,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../images/3_compressed.jpg");
+    background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../assets/images/3_compressed.jpg");
     min-height: 100vh;
 }
 

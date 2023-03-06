@@ -1,5 +1,8 @@
 # Arrow-India
-Building a static website to showcase products of a Jute Bags Manufacturer:
+
+Building a static website to showcase products of a Jute Bags Manufacturer :
+
+<img src="assets/images/readme.png">
 
 GitHub Page : <a href="https://souvikmajumder26.github.io/Arrow-India/"><b>Arrow India</b></a>
 
