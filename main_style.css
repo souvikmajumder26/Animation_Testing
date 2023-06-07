@@ -49,6 +49,12 @@ a {
     0%, 10%, 100% { width: 0;}
     70%, 90% { width: 100%;}
 }
+/* Page - Left Top Corner items */
+.logo-top-left {
+    position: absolute;
+    top: 20px;
+    padding-left: 30px;
+}
 
 /* Page - Left Down Corner items */
 .contact-bottom-left {
@@ -180,7 +186,7 @@ a {
 /*********** Tablet screen view ***********/
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body {
-        background-image: url("assets/images/heart-jute_compressed.jpg")
+        background-image: url("assets/images/bcg1.jpg")
     }
 
     /* ARROW INDIA : name animation */
@@ -240,7 +246,7 @@ a {
 /*********** Mobile screen view ***********/
 @media screen and (max-width: 767px) {
     body {
-        background-image: url("assets/images/heart-jute_compressed.jpg")
+        background-image: url("assets/images/bcg1.jpg")
     }
 
     /* ARROW INDIA : name animation */
