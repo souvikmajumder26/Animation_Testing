@@ -5,10 +5,7 @@
 
 body {
     margin-left: 10px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: linear-gradient(rgba(75, 33, 9, 0.37), rgba(75, 33, 9, 0.37)), url("../assets/images/3_compressed.jpg");
+    background-image: url("../assets/images/bcg3.jpg");
     min-height: 100vh;
 }
 
@@ -84,17 +81,17 @@ i {
 .contact-whatsapp-button {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #34434b;
-    color: white;
+    background-color: #eae9ed;
+    color: #163c26;
     font-size: 18px;
     font-weight: bold;
-    border: 10px solid #34434b;
+    border: 10px solid #eae9ed;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
 }
 .contact-whatsapp-button:hover {
-    background-color: #425661;
-    border: 10px solid #425661;
+    background-color: #eae9ed;
+    border: 10px solid #eae9ed;
 }
 .contact-whatsapp-image {
     margin-right: 10px;

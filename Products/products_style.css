@@ -8,7 +8,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/images/2_blurred_compressed.jpg");
+    background-image: url("../assets/images/bcg2.jpg");
     min-height: 100vh;
 }
 
@@ -27,15 +27,15 @@ p {
 }
 
 .navbar-brand {
-    font-size: 22px;
+    font-size: 16px;
     color:black;
     margin-left: 10px;
 }
 
 .navbar-nav {
     margin-right: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
     background-color: rgba(8, 88, 12, 0.5);
     border-radius: 500px;
