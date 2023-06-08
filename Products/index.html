@@ -35,6 +35,18 @@
             <div class="col-6 col-lg-3 col-md-4">
                 <div class="img-container">
                     <div class="img-hover-pan-v img-border">
+                        <img id="myImg22" class="img-fluid" src="../assets/images/jutebags/resized/p22.jpg">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="imgModal">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 col-md-4">
+                <div class="img-container">
+                    <div class="img-hover-pan-v img-border">
                         <img id="myImg1" class="img-fluid" src="../assets/images/jutebags/resized/p1.jpg">
                     </div>
                     <!-- The Modal -->
@@ -286,6 +298,10 @@
         </div>
     </div>
 
+    <footer>
+        <p class="copyright-bottom-left">Copyright © 2023 All Rights Reserved - <a href="../index.html">Arrow India</a></p>
+    </footer>
+
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
@@ -474,6 +490,15 @@
         var modalImg10 = document.getElementById("imgModal");
         // var captionText = document.getElementById("caption");
         img21.onclick = function(){
+          modal.style.display = "block";
+          modalImg10.src = this.src;
+        //   captionText.innerHTML = this.alt;
+        }
+
+        var img22 = document.getElementById("myImg22");
+        var modalImg10 = document.getElementById("imgModal");
+        // var captionText = document.getElementById("caption");
+        img22.onclick = function(){
           modal.style.display = "block";
           modalImg10.src = this.src;
         //   captionText.innerHTML = this.alt;

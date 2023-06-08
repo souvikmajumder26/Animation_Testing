@@ -16,6 +16,17 @@ p {
     margin: 0;
 }
 
+a {
+    color: white;
+}
+
+.copyright-bottom-left {
+    color: white;
+    font-family: 'Raleway-400';
+    font-size: 15px;
+    padding: 15px;
+}
+
 .navbar {
     margin-top: 15px;
     margin-left: 5px;

@@ -9,6 +9,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: white;
+}
+
 i {
     float: left;
     margin-left: 5%;
@@ -90,13 +94,33 @@ i {
     box-shadow: 1px 1px 10px black;
 }
 .contact-whatsapp-button:hover {
-    background-color: #eae9ed;
-    border: 10px solid #eae9ed;
+    background-color: #eae9eddc;
+    border: 10px solid #eae9eddc;
 }
 .contact-whatsapp-image {
     margin-right: 10px;
     width: 30px;
     height: 30px;
+}
+
+.about-img-border-left {
+    margin-top: 50px;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.about-img-border-right {
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.copyright-bottom-left {
+    color: white;
+    font-family: 'Raleway-400';
+    font-size: 15px;
+    padding: 15px;
 }
 
 #map {
@@ -107,6 +131,27 @@ i {
     width: 96%;
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
+}
+
+#about-left {
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    height: 330px;
+    width: 96%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#about-right {
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 20px;
+    width: 96%;
+    font-family: 'Raleway-400';
+    text-align: justify;
+    text-shadow: 2px 2px 10px black;
 }
 
 @media screen and (min-width: 992px) {
@@ -123,9 +168,21 @@ i {
     #map {
         margin-top: 0px;
     }
+    #about-left {
+        margin-top: 0px;
+    }
+    #about-right {
+        margin-top: 0px;
+    }
 }
 @media screen and (min-width: 768px) {
     #map {
+        margin-top: 0px;
+    }
+    #about-left {
+        margin-top: 0px;
+    }
+    #about-right {
         margin-top: 0px;
     }
 }
